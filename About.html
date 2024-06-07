@@ -9,19 +9,16 @@
 	<link rel="stylesheet" href="employee.css">
 </head>
 <body class="bg-smoke">
-    <nav class="navigation">
-        <div class="logo"><a href="Dashboard.html"><img src="profiles/logo.png" alt="Temsiz">TEMSIZ</a></div>
-        <div class="link">
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="Profile.html">Profile</a>
-            <a href="Task.html">Task</a>
+    <div class="row navigation">
+        <div class="col-2 logo"><a href="AdminDash.html"><img src="profiles/logo.png" alt="Temsiz"></a><span>TEMSIZ</span></div>
+        <div class="col-3 links">
+            <a href="Dashboard.html" class="animated-link">Dashboard</a>
+            <a href="Profile.html" class="animated-link">Profile</a>
+            <a href="Task.html" class="animated-link">Task</a>
         </div>
-        <div class="menu">
-            <img src="profiles/3.jpg" alt="P">
-            <p>Geruel Alcaraz</p>
-            <i class="lni lni-menu" id="drop"></i>
-        </div>
-    </nav>
+        <div class="col-6 sideprofile"><img src="profiles/3.jpg"> <span>Employee Name</span></div>
+        <div class="col menu"><i class="lni lni-menu" id="drop"></i></div>
+    </div>
     <div class="dropdown">
         <br><button type="button" class="btn btn-success">Active</button><br>
         <a href="Help.html"><i class="lni lni-help"></i> Help</a><br>
