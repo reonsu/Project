@@ -9,14 +9,15 @@
 	<link rel="stylesheet" href="employee.css">
 </head>
 <body class="bg-smoke">
+    <!-- NAVIGATION -->
     <div class="row navigation">
         <div class="col-2 logo"><a href="AdminDash.html"><img src="profiles/logo.png" alt="Temsiz"></a><span>TEMSIZ</span></div>
-        <div class="col-3 links">
+        <div class="col-2 links">
             <a href="Dashboard.html" class="animated-link">Dashboard</a>
             <a href="Profile.html" class="animated-link">Profile</a>
             <a href="Task.html" class="animated-link">Task</a>
         </div>
-        <div class="col-6 sideprofile"><img src="profiles/3.jpg"> <span>Employee Name</span></div>
+        <div class="col-7 sideprofile"><img src="profiles/3.jpg"> <span>Employee Name</span></div>
         <div class="col menu"><i class="lni lni-menu" id="drop"></i></div>
     </div>
     <div class="dropdown">
@@ -25,7 +26,74 @@
         <a href="About.html"><i class="lni lni-magnifier"></i> About</a><br>
         <a href="Logout"><i class="lni lni-exit"></i> Logout</a><br> 
     </div>
-    
+
+    <!-- CONTENT -->
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header bg-teal text-white d-flex align-items-center">
+                <div class="profile-img mr-3">
+                    <img src="https://via.placeholder.com/80" alt="Profile Image" class="rounded-circle">
+                </div>
+                <div class="profile-nav-info">
+                    <h3 class="user-name ms-2">Employee Name</h3>
+                    <div class="address">
+                        <p class="state ms-2">Junior Developer</p>
+                        <p class="country ms-2">Employee ID: 26165456</p>
+                    </div>
+                </div>
+                <div class="profile-option ml-auto">
+                    <button class="btn btn-warning" id="editProfileBtn">Edit Profile</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="user-bio mb-4">
+                    <h3>About Me</h3>
+                    <p class="bio">Hello there! I'm Employee Name, a spirited and eager individual ready to embark on my journey as a junior developer at here. With a curious mind and a passion for learning, I thrive on challenges and opportunities to grow. I bring a positive attitude, strong communication skills, and a collaborative spirit to the team, making me an enthusiastic addition to the dynamic environment.</p>
+                </div>
+                <hr class="section-divider">
+                <div class="user-info">
+                    <h3>Details</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="detail-item"><strong>Age:</strong> 54</li>
+                                <li class="detail-item"><strong>Status:</strong> Single</li>
+                                <li class="detail-item"><strong>Email:</strong> emp@gmial.com</li>
+                                <li class="detail-item"><strong>Contact Number:</strong> 09561862313</li>
+                                <li class="detail-item"><strong>Date of Birth:</strong> Sept 29, 1965</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 border-left">
+                            <ul class="list-unstyled">
+                                <li class="detail-item"><strong>Location:</strong> Philippines</li>
+                                <li class="detail-item"><strong>Nationality:</strong> Filipino</li>
+                                <li class="detail-item"><strong>Date of Hire:</strong> Feb 5, 2004</li>
+                                <li class="detail-item"><strong>Employment Status:</strong> Full-time</li>
+                                <li class="detail-item"><strong>Work Schedule:</strong> Monday-Friday</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="section-divider">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="function.js"></script>
+
+    <script>
+        // Get the button element
+        var editProfileBtn = document.getElementById("editProfileBtn");
+
+        // Add event listener for the button click
+        editProfileBtn.addEventListener("click", function () {
+            // Redirect to the Account Settings page
+            window.location.href = "settings.html"; // Change the URL to the actual URL of your Account Settings page
+        });
+    </script>
     <script src="function.js"></script>
 </body>
 </html>
