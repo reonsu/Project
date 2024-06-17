@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2024 at 10:34 AM
+-- Generation Time: Jun 17, 2024 at 01:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -38,6 +38,27 @@ CREATE TABLE `accounts` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `archive`
+--
+
+CREATE TABLE `archive` (
+  `Employee_ID` varchar(20) NOT NULL,
+  `Firstname` varchar(50) NOT NULL,
+  `Lastname` varchar(50) NOT NULL,
+  `Position` varchar(50) NOT NULL,
+  `Contact` bigint(20) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `Age` int(11) NOT NULL,
+  `Birthday` date NOT NULL,
+  `Gender` varchar(50) NOT NULL,
+  `Country` varchar(50) NOT NULL,
+  `Language` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `info`
 --
 
@@ -54,8 +75,19 @@ CREATE TABLE `info` (
   `Birthday` date NOT NULL,
   `Gender` varchar(50) NOT NULL,
   `Country` varchar(50) NOT NULL,
-  `Main_Language` varchar(50) NOT NULL,
+  `Language` varchar(50) NOT NULL,
   `Bio` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_reset`
+--
+
+CREATE TABLE `password_reset` (
+  `Employee_ID` varchar(20) NOT NULL,
+  `Via` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
